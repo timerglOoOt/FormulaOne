@@ -17,6 +17,11 @@
 		CE8EDB822A5575380084F778 /* NewsPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8EDB812A5575380084F778 /* NewsPage.storyboard */; };
 		CE8EDB842A55754D0084F778 /* AboutUsPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8EDB832A55754D0084F778 /* AboutUsPage.storyboard */; };
 		CE8EDB862A5575640084F778 /* CalendarPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8EDB852A5575640084F778 /* CalendarPage.storyboard */; };
+		CE8EDB962A5704CE0084F778 /* RacerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB952A5704CE0084F778 /* RacerTableViewCell.swift */; };
+		CE8EDB982A5708F30084F778 /* Racer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB972A5708F30084F778 /* Racer.swift */; };
+		CE8EDB9A2A5709F30084F778 /* RacerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB992A5709F30084F778 /* RacerModel.swift */; };
+		CE8EDB9C2A570C5A0084F778 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB9B2A570C5A0084F778 /* Countries.swift */; };
+		CE8EDB9E2A5748660084F778 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB9D2A5748660084F778 /* MainPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		CE8EDB812A5575380084F778 /* NewsPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsPage.storyboard; sourceTree = "<group>"; };
 		CE8EDB832A55754D0084F778 /* AboutUsPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutUsPage.storyboard; sourceTree = "<group>"; };
 		CE8EDB852A5575640084F778 /* CalendarPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalendarPage.storyboard; sourceTree = "<group>"; };
+		CE8EDB952A5704CE0084F778 /* RacerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacerTableViewCell.swift; sourceTree = "<group>"; };
+		CE8EDB972A5708F30084F778 /* Racer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Racer.swift; sourceTree = "<group>"; };
+		CE8EDB992A5709F30084F778 /* RacerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacerModel.swift; sourceTree = "<group>"; };
+		CE8EDB9B2A570C5A0084F778 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		CE8EDB9D2A5748660084F778 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +152,7 @@
 		CE8EDB732A556EF20084F778 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE8EDB9D2A5748660084F778 /* MainPageViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -149,6 +160,7 @@
 		CE8EDB742A556F010084F778 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE8EDB952A5704CE0084F778 /* RacerTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,6 +168,9 @@
 		CE8EDB752A556FDB0084F778 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CE8EDB972A5708F30084F778 /* Racer.swift */,
+				CE8EDB992A5709F30084F778 /* RacerModel.swift */,
+				CE8EDB9B2A570C5A0084F778 /* Countries.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -298,9 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8EDB9E2A5748660084F778 /* MainPageViewController.swift in Sources */,
 				CE8EDB5E2A55639C0084F778 /* ViewController.swift in Sources */,
+				CE8EDB982A5708F30084F778 /* Racer.swift in Sources */,
 				CE8EDB5A2A55639C0084F778 /* AppDelegate.swift in Sources */,
 				CE8EDB5C2A55639C0084F778 /* SceneDelegate.swift in Sources */,
+				CE8EDB962A5704CE0084F778 /* RacerTableViewCell.swift in Sources */,
+				CE8EDB9C2A570C5A0084F778 /* Countries.swift in Sources */,
+				CE8EDB9A2A5709F30084F778 /* RacerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
