@@ -18,6 +18,13 @@ class MainPageViewController: UIViewController, UITableViewDataSource, UITableVi
 
         resultTableView.dataSource = self
         resultTableView.delegate = self
+        
+        resultTableView.register(InfoTableViewCell.self, forCellReuseIdentifier: "InfoTableViewCell")
+                
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,5 +66,21 @@ class MainPageViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         40
     }
+
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//
+//        self.performSegue(withIdentifier: "goToMain", sender: indexPath)
+//    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToMain" {
+            let racerViewController = segue.destination as! RacerViewController
+            let indexPath = sender as! IndexPath
+            
+            let sectionArray = racerModel.racers[indexPath.section]
+            let racer = sectionArray[indexPath.row]
+            
+            racerViewController.racer = racer
+        }
+    }
 }

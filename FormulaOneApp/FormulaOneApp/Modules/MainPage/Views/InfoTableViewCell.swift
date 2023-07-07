@@ -9,17 +9,15 @@ import UIKit
 
 class InfoTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var PositionLabel: UILabel!
-    @IBOutlet weak var PointsLabel: UILabel!
+    @IBOutlet weak var positionLabel: UILabel!
+    @IBOutlet weak var pointsLabel: UILabel!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        PositionLabel.text = "#"
-        PointsLabel.text = "Очки"
-        self.alpha = 0.4
-//        self.layer.backgroundColor = UIColor.lightGray.cgColor
+        positionLabel.text = "#"
+        pointsLabel.text = "Очки"
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -27,5 +25,5 @@ class InfoTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }
