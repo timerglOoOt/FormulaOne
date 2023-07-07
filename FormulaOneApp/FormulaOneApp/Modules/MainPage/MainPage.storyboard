@@ -16,9 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Da2-nl-WXJ">
-                                <rect key="frame" x="0.0" y="28" width="414" height="785"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Da2-nl-WXJ">
+                                <rect key="frame" x="0.0" y="48" width="414" height="765"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RacerTableViewCell" id="wDy-IG-Mqi" customClass="RacerTableViewCell" customModule="FormulaOneApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
@@ -66,12 +66,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Da2-nl-WXJ" secondAttribute="trailing" id="1je-S9-Ex8"/>
-                            <constraint firstItem="Da2-nl-WXJ" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="28" id="7Dz-qP-iPI"/>
-                            <constraint firstItem="Da2-nl-WXJ" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="Xip-7E-4tI"/>
-                            <constraint firstItem="Da2-nl-WXJ" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="ejx-Eh-7XC"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Главная" image="house.fill" catalog="system" selectedImage="house.fill" id="RCm-6D-Lwq"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

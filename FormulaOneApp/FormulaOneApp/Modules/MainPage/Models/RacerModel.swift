@@ -46,6 +46,7 @@ class RacerModel {
         
         var racerArray = [Racer]()
         
+        racerArray.append(Racer(position: "", country: UIImage(named: Countries.Austria)!, name: "", points: ""))
         racerArray.append(racer1)
         racerArray.append(racer2)
         racerArray.append(racer3)
@@ -84,6 +85,7 @@ class RacerModel {
         
         var teamArray = [Racer] ()
         
+        teamArray.append(Racer(position: "", country: UIImage(named: Countries.Austria)!, name: "", points: ""))
         teamArray.append(team1)
         teamArray.append(team2)
         teamArray.append(team3)

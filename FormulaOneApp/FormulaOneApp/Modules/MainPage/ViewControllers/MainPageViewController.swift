@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainPageViewController: UIViewController, UITableViewDataSource {
+class MainPageViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     let racerModel = RacerModel()
     
@@ -17,7 +17,7 @@ class MainPageViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
 
         resultTableView.dataSource = self
-//        resultTableView.delegate = self
+        resultTableView.delegate = self
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,6 +37,12 @@ class MainPageViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0 {
+            let cell = resultTableView.dequeueReusableCell(withIdentifier: "InfoTableViewCell") as! InfoTableViewCell
+            
+            return cell
+        }
+        
         let cell = resultTableView.dequeueReusableCell(withIdentifier: "RacerTableViewCell") as! RacerTableViewCell
         
         let sectionArray = racerModel.racers[indexPath.section]
@@ -49,6 +55,9 @@ class MainPageViewController: UIViewController, UITableViewDataSource {
         
         return cell
     }
-
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        40
+    }
     
 }
