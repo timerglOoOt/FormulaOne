@@ -140,7 +140,7 @@ The latest in a long line of Japanese drivers to reach F1, Yuki Tsunoda earned a
 
 Climbing the junior ranks championed by the combined support of both Honda’s Dream Project young driver programme and Red Bull, Tsunoda’s F1 opportunity came after just two seasons competing outside of his native Japan.
 """, racerImage: RacerImage.tsu)
-        let racer18 = RacerInfo(position: "18.", country: UIImage(named: Countries.Netherlands)!, name: "Кевин Магнуссен (HAA)", points: "2", racerInfo: """
+        let racer18 = RacerInfo(position: "18.", country: UIImage(named: Countries.Denmark)!, name: "Кевин Магнуссен (HAA)", points: "2", racerInfo: """
 Born: 5/10/1992, Roskilde, Denmark
 
 Forming one half of the Haas F1 Team’s ‘Comeback Kings’ driver line-up alongside Nico Hulkenberg for the 2023 season, Kevin Magnussen elongated his F1 career following his eleventh-hour return in 2022.
@@ -152,10 +152,10 @@ Born: 06/02/1995, Uitwellingerga, Netherlands
 
 A fine example of what is possible when a chance opportunity is grasped with both hands, Nyck de Vries scored points in his stand-in performance for Williams at Monza last season, which led directly to his first full Formula 1 season in 2023 with AlphaTauri.
 
-While those in the know had never doubted the credentials of de Vries – a title winner in Formula 2 and Formula E in 2019 and 2020-21 respectively – it took a last minute call up to replace appendicitis-stricken Alex Albon at Williams for the 2022 Italian Grand Prix to fortuitously put those talents under the nose of F1 bosses directly.
+While those in the know had never doubted the credentials of de Vries – a title winner in Formula 2 and Formula E in 2019 and 2020-21 respectively – it took a last minute call up to replace appendicitis-stricken Alex Albon at Williams for the 2022 Italian Grand Prix.
 """, racerImage: RacerImage.vri)
         let racer20 = RacerInfo(position: "20.", country: UIImage(named: Countries.USA)!, name: "Логан Сарджент (WIL)", points: "0", racerInfo: """
-Born: 31/12/2000б Fort Lauderdale, USA
+Born: 31/12/2000, Fort Lauderdale, USA
 
 One of three rookies who made their Formula 1 debut in 2023, Logan Sargeant lined up with the Williams Racing team.
 
