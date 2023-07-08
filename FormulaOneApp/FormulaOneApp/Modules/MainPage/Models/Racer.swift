@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 
 class Racer: NSObject {
-    var position: String
-    var country: UIImage
-    var name: String
-    var points: String
+    let position: String
+    let country: UIImage
+    let name: String
+    let points: String
     
 
     init(position: String, country: UIImage, name: String, points: String) {
@@ -23,4 +23,19 @@ class Racer: NSObject {
     }
     
     
+}
+
+
+class RacerInfo: Racer {
+    
+    let racerImage: String
+    let racerInfo: String
+    
+    init(position: String, country: UIImage, name: String, points: String, racerInfo: String, racerImage: String) {
+        
+        self.racerInfo = racerInfo
+        self.racerImage = racerImage
+        super.init(position: position, country: country, name: name, points: points)
+        
+    }
 }

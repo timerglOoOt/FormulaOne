@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Таблица-->
+        <!--Main Page View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="MainPageViewController" id="Y6W-OH-hqX" customClass="MainPageViewController" customModule="FormulaOneApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,7 +59,6 @@
                                             <outlet property="nameLabel" destination="ytM-8V-5Yn" id="bd5-bI-CZL"/>
                                             <outlet property="pointsLabel" destination="C17-2I-Wx1" id="WhI-W9-oF5"/>
                                             <outlet property="positionLabel" destination="LpV-Ds-R7C" id="hH8-vD-0DR"/>
-                                            <segue destination="dBt-AN-j2i" kind="show" identifier="goToMain" id="pNU-0O-LB5"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -68,8 +67,8 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Таблица" largeTitleDisplayMode="never" id="8To-GQ-dgb">
-                        <barButtonItem key="backBarButtonItem" title="Главная" id="Leb-aX-7jB"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="8To-GQ-dgb">
+                        <barButtonItem key="backBarButtonItem" title=" " id="dQq-WC-Kk4"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -80,27 +79,22 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="-34.151785714285715"/>
         </scene>
-        <!--Racer View Controller-->
+        <!-- -->
         <scene sceneID="VPd-nO-F34">
             <objects>
-                <viewController storyboardIdentifier="RacerViewController" id="dBt-AN-j2i" customClass="RacerViewController" customModule="FormulaOneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RacerViewController" hidesBottomBarWhenPushed="YES" id="dBt-AN-j2i" customClass="RacerViewController" customModule="FormulaOneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qhX-im-vTY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wKN-U1-OwQ">
-                                <rect key="frame" x="82" y="121" width="250" height="250"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <rect key="frame" x="82" y="116" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47O-92-16a">
-                                <rect key="frame" x="41" y="402" width="332" height="440"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47O-92-16a">
+                                <rect key="frame" x="64" y="416" width="286" height="419"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -108,7 +102,7 @@
                         <viewLayoutGuide key="safeArea" id="V64-o9-ibz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zb1-hh-NmR"/>
+                    <navigationItem key="navigationItem" title=" " id="zb1-hh-NmR"/>
                     <connections>
                         <outlet property="racerImageView" destination="wKN-U1-OwQ" id="Xdb-JP-972"/>
                         <outlet property="racerInfoLabel" destination="47O-92-16a" id="HmG-tt-kKP"/>
@@ -121,7 +115,6 @@
         <!--Главная-->
         <scene sceneID="Dg6-Fr-ltI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EMA-kg-aoK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wLw-ev-fUL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Главная" image="house.fill" catalog="system" selectedImage="house.fill" id="RCm-6D-Lwq"/>
                     <toolbarItems/>
@@ -134,6 +127,7 @@
                         <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="jfl-0a-GAH"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMA-kg-aoK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="-34.151785714285715"/>
         </scene>

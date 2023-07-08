@@ -7,45 +7,45 @@
 
 import UIKit
 
-class MainPageViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MainPageViewController: UIViewController {
 
     let racerModel = RacerModel()
     
     @IBOutlet weak var resultTableView: UITableView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        resultTableView.dataSource = self
-        resultTableView.delegate = self
-        
-        resultTableView.register(InfoTableViewCell.self, forCellReuseIdentifier: "InfoTableViewCell")
-                
-    }
+    // MARK: Life cycle
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        racerModel.racers[section].count
+       setupTableView()
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        racerModel.racers.count
-    }
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
-            return "Чемпионат Мира"
-        }
+    private func setupTableView() {
+        resultTableView.dataSource = self
+        resultTableView.delegate = self
         
-        return "Кубок Конструкторов"
+        resultTableView.register(UINib(nibName: "InfoCell", bundle: nil), forCellReuseIdentifier: "InfoTableViewCell")
     }
-    
+}
+
+// MARK: - UITableViewDataSource, UITableViewDelegate
+
+extension MainPageViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = resultTableView.dequeueReusableCell(withIdentifier: "InfoTableViewCell") as! InfoTableViewCell
+            
+//            cell.awakeFromNib()
+            cell.selectionStyle = .none
+            
+//            print(cell.pointsLabel)
+
+//            cell.backgroundColor = UIColor.lightGray
             
             return cell
         }
@@ -60,27 +60,47 @@ class MainPageViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.nameLabel.text = racer.name
         cell.pointsLabel.text = racer.points
         
+        cell.selectionStyle = .none
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        racerModel.racers[section].count
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        racerModel.racers.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "Чемпионат Мира"
+        }
+        return "Кубок Конструкторов"
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         40
     }
 
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//        self.performSegue(withIdentifier: "goToMain", sender: indexPath)
-//    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return 20
+        }
+        
+        return 43.5
+    }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToMain" {
-            let racerViewController = segue.destination as! RacerViewController
-            let indexPath = sender as! IndexPath
-            
-            let sectionArray = racerModel.racers[indexPath.section]
-            let racer = sectionArray[indexPath.row]
-            
-            racerViewController.racer = racer
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let racerViewController = storyboard?.instantiateViewController(withIdentifier: "RacerViewController") as? RacerViewController else { return }
+        
+        let sectionArray = racerModel.racers[indexPath.section]
+        let racer = sectionArray[indexPath.row]
+        
+        
+        if indexPath.row != 0 && indexPath.section == 0 {
+            racerViewController.racer = racer as! RacerInfo
+            navigationController?.pushViewController(racerViewController, animated: true)
         }
     }
 }

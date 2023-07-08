@@ -23,8 +23,9 @@
 		CE8EDB9C2A570C5A0084F778 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB9B2A570C5A0084F778 /* Countries.swift */; };
 		CE8EDB9E2A5748660084F778 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB9D2A5748660084F778 /* MainPageViewController.swift */; };
 		CE8EDBA22A57EDCB0084F778 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8EDBA12A57EDCB0084F778 /* InfoCell.xib */; };
-		CE8EDBA42A57EE900084F778 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDBA32A57EE900084F778 /* InfoTableViewCell.swift */; };
 		CEDF20B52A58102D00FDA336 /* RacerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20B42A58102D00FDA336 /* RacerViewController.swift */; };
+		CEDF20B72A59779A00FDA336 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20B62A59779A00FDA336 /* InfoTableViewCell.swift */; };
+		CEDF20B92A59AEC800FDA336 /* RacerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20B82A59AEC800FDA336 /* RacerImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,8 +47,9 @@
 		CE8EDB9B2A570C5A0084F778 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		CE8EDB9D2A5748660084F778 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		CE8EDBA12A57EDCB0084F778 /* InfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
-		CE8EDBA32A57EE900084F778 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		CEDF20B42A58102D00FDA336 /* RacerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacerViewController.swift; sourceTree = "<group>"; };
+		CEDF20B62A59779A00FDA336 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		CEDF20B82A59AEC800FDA336 /* RacerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacerImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +171,7 @@
 			children = (
 				CE8EDB952A5704CE0084F778 /* RacerTableViewCell.swift */,
 				CE8EDBA12A57EDCB0084F778 /* InfoCell.xib */,
-				CE8EDBA32A57EE900084F778 /* InfoTableViewCell.swift */,
+				CEDF20B62A59779A00FDA336 /* InfoTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +182,7 @@
 				CE8EDB972A5708F30084F778 /* Racer.swift */,
 				CE8EDB992A5709F30084F778 /* RacerModel.swift */,
 				CE8EDB9B2A570C5A0084F778 /* Countries.swift */,
+				CEDF20B82A59AEC800FDA336 /* RacerImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -327,12 +330,13 @@
 				CE8EDB9E2A5748660084F778 /* MainPageViewController.swift in Sources */,
 				CE8EDB5E2A55639C0084F778 /* ViewController.swift in Sources */,
 				CE8EDB982A5708F30084F778 /* Racer.swift in Sources */,
-				CE8EDBA42A57EE900084F778 /* InfoTableViewCell.swift in Sources */,
 				CE8EDB5A2A55639C0084F778 /* AppDelegate.swift in Sources */,
 				CE8EDB5C2A55639C0084F778 /* SceneDelegate.swift in Sources */,
+				CEDF20B92A59AEC800FDA336 /* RacerImage.swift in Sources */,
 				CE8EDB962A5704CE0084F778 /* RacerTableViewCell.swift in Sources */,
 				CE8EDB9C2A570C5A0084F778 /* Countries.swift in Sources */,
 				CE8EDB9A2A5709F30084F778 /* RacerModel.swift in Sources */,
+				CEDF20B72A59779A00FDA336 /* InfoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
