@@ -195,7 +195,7 @@ The latest in an acclaimed lineage of drivers to have earned an F1 race seat wit
         let team3 = Racer(position: "3.", country: UIImage(named: Countries.Britain)!, name: "Астон Мартин", points: "175")
         let team4 = Racer(position: "4.", country: UIImage(named: Countries.Italy)!, name: "Феррари", points: "154")
         let team5 = Racer(position: "5.", country: UIImage(named: Countries.France)!, name: "Альпин", points: "47")
-        let team6 = Racer(position: "6.", country: UIImage(named: Countries.Britain)!, name: "Альпин", points: "29")
+        let team6 = Racer(position: "6.", country: UIImage(named: Countries.Britain)!, name: "Макларен", points: "29")
         let team7 = Racer(position: "7.", country: UIImage(named: Countries.USA)!, name: "Хаас", points: "11")
         let team8 = Racer(position: "8.", country: UIImage(named: Countries.Switzerland)!, name: "Альфа Ромео", points: "9")
         let team9 = Racer(position: "9.", country: UIImage(named: Countries.Britain)!, name: "Уильямс", points: "7")
