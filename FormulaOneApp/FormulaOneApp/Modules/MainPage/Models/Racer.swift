@@ -12,10 +12,10 @@ class Racer: NSObject {
     let position: String
     let country: UIImage
     let name: String
-    let points: String
+    let points: Int
     
 
-    init(position: String, country: UIImage, name: String, points: String) {
+    init(position: String, country: UIImage, name: String, points: Int) {
         self.position = position
         self.country = country
         self.name = name
@@ -31,7 +31,7 @@ class RacerInfo: Racer {
     let racerImage: String
     let racerInfo: String
     
-    init(position: String, country: UIImage, name: String, points: String, racerInfo: String, racerImage: String) {
+    init(position: String, country: UIImage, name: String, points: Int, racerInfo: String, racerImage: String) {
         
         self.racerInfo = racerInfo
         self.racerImage = racerImage

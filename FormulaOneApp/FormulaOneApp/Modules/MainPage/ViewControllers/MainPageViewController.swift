@@ -55,10 +55,10 @@ extension MainPageViewController: UITableViewDataSource, UITableViewDelegate {
         let sectionArray = racerModel.racers[indexPath.section]
         let racer = sectionArray[indexPath.row]
         
-        cell.positionLabel.text = racer.position
+        cell.positionLabel.text = String(indexPath.row) + "."
         cell.countryImageView.image = racer.country
         cell.nameLabel.text = racer.name
-        cell.pointsLabel.text = racer.points
+        cell.pointsLabel.text = String(racer.points)
         
         cell.selectionStyle = .none
         return cell
