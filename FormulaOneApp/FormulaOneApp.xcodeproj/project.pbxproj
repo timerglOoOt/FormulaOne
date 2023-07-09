@@ -135,10 +135,12 @@
 		CE8EDB722A556DC30084F778 /* CalendarPage */ = {
 			isa = PBXGroup;
 			children = (
-				CE8EDB852A5575640084F778 /* CalendarPage.storyboard */,
 				CE8EDB7E2A55704A0084F778 /* Models */,
 				CE8EDB7D2A5570410084F778 /* Views */,
 				CE8EDB7C2A5570320084F778 /* VeiwControllers */,
+				CE8EDB852A5575640084F778 /* CalendarPage.storyboard */,
+				28C8EDBF2A55C948007FB2F1 /* CalendarViewController.swift */,
+				28C8EDC32A55FB7F007FB2F1 /* CalendarViewCell.swift */,
 			);
 			path = CalendarPage;
 			sourceTree = "<group>";
@@ -209,7 +211,6 @@
 		CE8EDB7C2A5570320084F778 /* VeiwControllers */ = {
 			isa = PBXGroup;
 			children = (
-				28C8EDBF2A55C948007FB2F1 /* CalendarViewController.swift */,
 			);
 			path = VeiwControllers;
 			sourceTree = "<group>";
@@ -217,7 +218,6 @@
 		CE8EDB7D2A5570410084F778 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				28C8EDC32A55FB7F007FB2F1 /* CalendarViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
