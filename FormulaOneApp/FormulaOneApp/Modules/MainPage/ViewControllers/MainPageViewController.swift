@@ -40,13 +40,8 @@ extension MainPageViewController: UITableViewDataSource, UITableViewDelegate {
         if indexPath.row == 0 {
             let cell = resultTableView.dequeueReusableCell(withIdentifier: "InfoTableViewCell") as! InfoTableViewCell
             
-//            cell.awakeFromNib()
             cell.selectionStyle = .none
-            
-//            print(cell.pointsLabel)
 
-//            cell.backgroundColor = UIColor.lightGray
-            
             return cell
         }
         

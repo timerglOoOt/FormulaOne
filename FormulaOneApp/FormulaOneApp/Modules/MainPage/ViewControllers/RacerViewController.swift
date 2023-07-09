@@ -24,11 +24,10 @@ class RacerViewController: UIViewController {
         
 
         title = String(str)
+        
         racerImageView.image = UIImage(named: racer.racerImage)
         racerImageView.layer.cornerRadius = 10
-//        racerImageView.layer.borderColor = UIColor.red.cgColor
         racerInfoLabel.text = racer.racerInfo
-//        racerImageView.layer.borderWidth = 5
 
     }
     
