@@ -14,6 +14,7 @@ struct News {
     let title: String
     let info: String
     let link: String
+    
     init(image: String, title: String, info: String, link: String) {
         
         self.image = image

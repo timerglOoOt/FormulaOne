@@ -8,14 +8,6 @@
 import UIKit
 
 class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    
     
     let newsModel = NewsModel()
 
@@ -33,5 +25,46 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         newsTableView.register(UINib(nibName: "TitleCell", bundle: nil), forCellReuseIdentifier: "TitleTableViewCell")
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        newsModel.news.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0 {
+            
+            let cell = newsTableView.dequeueReusableCell(withIdentifier: "TitleTableViewCell") as! TitleTableViewCell
+            
+            cell.selectionStyle = .none
+ 
+            return cell
+        }
+        
+        let cell = newsTableView.dequeueReusableCell(withIdentifier: "NewsTableViewCell") as! NewsTableViewCell
+        
+        let news = newsModel.news[indexPath.row]
+        
+        cell.newsImageView.image = UIImage(named: news.image)
+        cell.newsTitleLabel.text = news.title
+        cell.newsInfoLabel.text = news.info
+        cell.selectionStyle = .none
+        
+        return cell
+    }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return 45
+        }
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let news = newsModel.news[indexPath.row]
+        
+        if let url = URL(string: news.link) {
+            UIApplication.shared.open(url)
+        }
+    }
 }

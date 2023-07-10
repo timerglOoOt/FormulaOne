@@ -11,10 +11,14 @@ class NewsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var newsImageView: UIImageView!
     @IBOutlet weak var newsTitleLabel: UILabel!
+    @IBOutlet weak var newsInfoLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        newsImageView.layer.cornerRadius = 5
+        newsImageView.layer.borderColor = .init(red: 0.86, green: 0.18, blue: 0.18, alpha: 1)
+        newsImageView.layer.borderWidth = 1.25
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
