@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28FE3CB12A5B3A6100D6CCB4 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE3CB02A5B3A6100D6CCB4 /* CalendarViewController.swift */; };
+		28FE3CB32A5B3A7700D6CCB4 /* CalendarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE3CB22A5B3A7700D6CCB4 /* CalendarViewCell.swift */; };
 		CE8EDB5A2A55639C0084F778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB592A55639C0084F778 /* AppDelegate.swift */; };
 		CE8EDB5C2A55639C0084F778 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB5B2A55639C0084F778 /* SceneDelegate.swift */; };
 		CE8EDB5E2A55639C0084F778 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB5D2A55639C0084F778 /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28FE3CB02A5B3A6100D6CCB4 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		28FE3CB22A5B3A7700D6CCB4 /* CalendarViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewCell.swift; sourceTree = "<group>"; };
 		CE8EDB562A55639C0084F778 /* FormulaOneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulaOneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8EDB592A55639C0084F778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8EDB5B2A55639C0084F778 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,7 +152,6 @@
 				CE8EDB7E2A55704A0084F778 /* Models */,
 				CE8EDB7D2A5570410084F778 /* Views */,
 				CE8EDB7C2A5570320084F778 /* VeiwControllers */,
-				CE8EDB852A5575640084F778 /* CalendarPage.storyboard */,
 			);
 			path = CalendarPage;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 		CE8EDB7C2A5570320084F778 /* VeiwControllers */ = {
 			isa = PBXGroup;
 			children = (
+				28FE3CB02A5B3A6100D6CCB4 /* CalendarViewController.swift */,
 			);
 			path = VeiwControllers;
 			sourceTree = "<group>";
@@ -233,6 +237,7 @@
 		CE8EDB7D2A5570410084F778 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				28FE3CB22A5B3A7700D6CCB4 /* CalendarViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 		CE8EDB7E2A55704A0084F778 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CE8EDB852A5575640084F778 /* CalendarPage.storyboard */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28FE3CB12A5B3A6100D6CCB4 /* CalendarViewController.swift in Sources */,
 				CEDF20C12A5C161100FDA336 /* TitleTableViewCell.swift in Sources */,
 				CE8EDB5E2A55639C0084F778 /* ViewController.swift in Sources */,
 				CEDF20CB2A5C1BBC00FDA336 /* News.swift in Sources */,
@@ -329,6 +336,7 @@
 				CE8EDB5A2A55639C0084F778 /* AppDelegate.swift in Sources */,
 				CEDF20CD2A5C1C3200FDA336 /* NewsModel.swift in Sources */,
 				CE8EDB5C2A55639C0084F778 /* SceneDelegate.swift in Sources */,
+				28FE3CB32A5B3A7700D6CCB4 /* CalendarViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
