@@ -19,6 +19,8 @@
 		CE8EDB822A5575380084F778 /* NewsPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8EDB812A5575380084F778 /* NewsPage.storyboard */; };
 		CE8EDB842A55754D0084F778 /* AboutUsPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8EDB832A55754D0084F778 /* AboutUsPage.storyboard */; };
 		CE8EDB862A5575640084F778 /* CalendarPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8EDB852A5575640084F778 /* CalendarPage.storyboard */; };
+		CEDF20BB2A5A135C00FDA336 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20BA2A5A135C00FDA336 /* ModalViewController.swift */; };
+		CEDF20BD2A5A139000FDA336 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20BC2A5A139000FDA336 /* AboutUsViewController.swift */; };
 		CE8EDB962A5704CE0084F778 /* RacerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB952A5704CE0084F778 /* RacerTableViewCell.swift */; };
 		CE8EDB982A5708F30084F778 /* Racer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB972A5708F30084F778 /* Racer.swift */; };
 		CE8EDB9A2A5709F30084F778 /* RacerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB992A5709F30084F778 /* RacerModel.swift */; };
@@ -68,6 +70,8 @@
 		CEDF20C82A5C186C00FDA336 /* NewsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsImage.swift; sourceTree = "<group>"; };
 		CEDF20CA2A5C1BBC00FDA336 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		CEDF20CC2A5C1C3200FDA336 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		CEDF20BA2A5A135C00FDA336 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		CEDF20BC2A5A139000FDA336 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +239,8 @@
 		CE8EDB792A5570180084F778 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CEDF20BA2A5A135C00FDA336 /* ModalViewController.swift */,
+				CEDF20BC2A5A139000FDA336 /* AboutUsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -356,6 +362,8 @@
 			files = (
 				CEDF20B52A58102D00FDA336 /* RacerViewController.swift in Sources */,
 				CE8EDB9E2A5748660084F778 /* MainPageViewController.swift in Sources */,
+				CEDF20BD2A5A139000FDA336 /* AboutUsViewController.swift in Sources */,
+				CEDF20BB2A5A135C00FDA336 /* ModalViewController.swift in Sources */,
 				CE8EDB5E2A55639C0084F778 /* ViewController.swift in Sources */,
 				CE8EDB982A5708F30084F778 /* Racer.swift in Sources */,
 				28FE3CB12A5B3A6100D6CCB4 /* CalendarViewController.swift in Sources */,
