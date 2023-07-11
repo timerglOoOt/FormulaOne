@@ -22,6 +22,7 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     private func setupTableView() {
         newsTableView.dataSource = self
         newsTableView.delegate = self
+        newsTableView.tableHeaderView?.backgroundColor = UIColor.white
         
         newsTableView.register(UINib(nibName: "TitleCell", bundle: nil), forCellReuseIdentifier: "TitleTableViewCell")
     }

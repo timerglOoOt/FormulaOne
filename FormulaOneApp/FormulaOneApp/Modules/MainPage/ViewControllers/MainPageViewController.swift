@@ -28,6 +28,7 @@ class MainPageViewController: UIViewController {
     private func setupTableView() {
         resultTableView.dataSource = self
         resultTableView.delegate = self
+        resultTableView.tableHeaderView?.backgroundColor = UIColor.white
         
         resultTableView.register(UINib(nibName: "InfoCell", bundle: nil), forCellReuseIdentifier: "InfoTableViewCell")
     }

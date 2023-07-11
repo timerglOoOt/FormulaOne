@@ -19,8 +19,6 @@
 		CE8EDB822A5575380084F778 /* NewsPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8EDB812A5575380084F778 /* NewsPage.storyboard */; };
 		CE8EDB842A55754D0084F778 /* AboutUsPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8EDB832A55754D0084F778 /* AboutUsPage.storyboard */; };
 		CE8EDB862A5575640084F778 /* CalendarPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8EDB852A5575640084F778 /* CalendarPage.storyboard */; };
-		CEDF20BB2A5A135C00FDA336 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20BA2A5A135C00FDA336 /* ModalViewController.swift */; };
-		CEDF20BD2A5A139000FDA336 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20BC2A5A139000FDA336 /* AboutUsViewController.swift */; };
 		CE8EDB962A5704CE0084F778 /* RacerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB952A5704CE0084F778 /* RacerTableViewCell.swift */; };
 		CE8EDB982A5708F30084F778 /* Racer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB972A5708F30084F778 /* Racer.swift */; };
 		CE8EDB9A2A5709F30084F778 /* RacerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB992A5709F30084F778 /* RacerModel.swift */; };
@@ -30,6 +28,8 @@
 		CEDF20B52A58102D00FDA336 /* RacerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20B42A58102D00FDA336 /* RacerViewController.swift */; };
 		CEDF20B72A59779A00FDA336 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20B62A59779A00FDA336 /* InfoTableViewCell.swift */; };
 		CEDF20B92A59AEC800FDA336 /* RacerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20B82A59AEC800FDA336 /* RacerImage.swift */; };
+		CEDF20BB2A5A135C00FDA336 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20BA2A5A135C00FDA336 /* ModalViewController.swift */; };
+		CEDF20BD2A5A139000FDA336 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20BC2A5A139000FDA336 /* AboutUsViewController.swift */; };
 		CEDF20BF2A5C159300FDA336 /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDF20BE2A5C159300FDA336 /* TitleCell.xib */; };
 		CEDF20C12A5C161100FDA336 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20C02A5C161100FDA336 /* TitleTableViewCell.swift */; };
 		CEDF20C32A5C167800FDA336 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20C22A5C167800FDA336 /* NewsTableViewCell.swift */; };
@@ -63,6 +63,8 @@
 		CEDF20B42A58102D00FDA336 /* RacerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacerViewController.swift; sourceTree = "<group>"; };
 		CEDF20B62A59779A00FDA336 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		CEDF20B82A59AEC800FDA336 /* RacerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacerImage.swift; sourceTree = "<group>"; };
+		CEDF20BA2A5A135C00FDA336 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		CEDF20BC2A5A139000FDA336 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		CEDF20BE2A5C159300FDA336 /* TitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
 		CEDF20C02A5C161100FDA336 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		CEDF20C22A5C167800FDA336 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -70,8 +72,6 @@
 		CEDF20C82A5C186C00FDA336 /* NewsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsImage.swift; sourceTree = "<group>"; };
 		CEDF20CA2A5C1BBC00FDA336 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		CEDF20CC2A5C1C3200FDA336 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
-		CEDF20BA2A5A135C00FDA336 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
-		CEDF20BC2A5A139000FDA336 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -528,11 +528,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M7U2MKC2VB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FormulaOneApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -556,11 +558,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M7U2MKC2VB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FormulaOneApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;

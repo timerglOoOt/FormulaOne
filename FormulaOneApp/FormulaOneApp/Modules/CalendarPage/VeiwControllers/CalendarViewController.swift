@@ -45,8 +45,10 @@ final class CalendarViewController: UIViewController, UITableViewDataSource, UIT
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.backgroundColor = UIColor.white
         separateEventsByDate()
     }
     
