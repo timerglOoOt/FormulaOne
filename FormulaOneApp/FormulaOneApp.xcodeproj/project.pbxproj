@@ -19,6 +19,15 @@
 		CE8EDB822A5575380084F778 /* NewsPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8EDB812A5575380084F778 /* NewsPage.storyboard */; };
 		CE8EDB842A55754D0084F778 /* AboutUsPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8EDB832A55754D0084F778 /* AboutUsPage.storyboard */; };
 		CE8EDB862A5575640084F778 /* CalendarPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8EDB852A5575640084F778 /* CalendarPage.storyboard */; };
+		CE8EDB962A5704CE0084F778 /* RacerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB952A5704CE0084F778 /* RacerTableViewCell.swift */; };
+		CE8EDB982A5708F30084F778 /* Racer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB972A5708F30084F778 /* Racer.swift */; };
+		CE8EDB9A2A5709F30084F778 /* RacerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB992A5709F30084F778 /* RacerModel.swift */; };
+		CE8EDB9C2A570C5A0084F778 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB9B2A570C5A0084F778 /* Countries.swift */; };
+		CE8EDB9E2A5748660084F778 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EDB9D2A5748660084F778 /* MainPageViewController.swift */; };
+		CE8EDBA22A57EDCB0084F778 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8EDBA12A57EDCB0084F778 /* InfoCell.xib */; };
+		CEDF20B52A58102D00FDA336 /* RacerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20B42A58102D00FDA336 /* RacerViewController.swift */; };
+		CEDF20B72A59779A00FDA336 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20B62A59779A00FDA336 /* InfoTableViewCell.swift */; };
+		CEDF20B92A59AEC800FDA336 /* RacerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20B82A59AEC800FDA336 /* RacerImage.swift */; };
 		CEDF20BF2A5C159300FDA336 /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDF20BE2A5C159300FDA336 /* TitleCell.xib */; };
 		CEDF20C12A5C161100FDA336 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20C02A5C161100FDA336 /* TitleTableViewCell.swift */; };
 		CEDF20C32A5C167800FDA336 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF20C22A5C167800FDA336 /* NewsTableViewCell.swift */; };
@@ -43,6 +52,15 @@
 		CE8EDB812A5575380084F778 /* NewsPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsPage.storyboard; sourceTree = "<group>"; };
 		CE8EDB832A55754D0084F778 /* AboutUsPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutUsPage.storyboard; sourceTree = "<group>"; };
 		CE8EDB852A5575640084F778 /* CalendarPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalendarPage.storyboard; sourceTree = "<group>"; };
+		CE8EDB952A5704CE0084F778 /* RacerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacerTableViewCell.swift; sourceTree = "<group>"; };
+		CE8EDB972A5708F30084F778 /* Racer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Racer.swift; sourceTree = "<group>"; };
+		CE8EDB992A5709F30084F778 /* RacerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacerModel.swift; sourceTree = "<group>"; };
+		CE8EDB9B2A570C5A0084F778 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		CE8EDB9D2A5748660084F778 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		CE8EDBA12A57EDCB0084F778 /* InfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
+		CEDF20B42A58102D00FDA336 /* RacerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacerViewController.swift; sourceTree = "<group>"; };
+		CEDF20B62A59779A00FDA336 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		CEDF20B82A59AEC800FDA336 /* RacerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacerImage.swift; sourceTree = "<group>"; };
 		CEDF20BE2A5C159300FDA336 /* TitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
 		CEDF20C02A5C161100FDA336 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		CEDF20C22A5C167800FDA336 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -159,6 +177,8 @@
 		CE8EDB732A556EF20084F778 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE8EDB9D2A5748660084F778 /* MainPageViewController.swift */,
+				CEDF20B42A58102D00FDA336 /* RacerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -166,6 +186,9 @@
 		CE8EDB742A556F010084F778 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE8EDB952A5704CE0084F778 /* RacerTableViewCell.swift */,
+				CE8EDBA12A57EDCB0084F778 /* InfoCell.xib */,
+				CEDF20B62A59779A00FDA336 /* InfoTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +196,10 @@
 		CE8EDB752A556FDB0084F778 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CE8EDB972A5708F30084F778 /* Racer.swift */,
+				CE8EDB992A5709F30084F778 /* RacerModel.swift */,
+				CE8EDB9B2A570C5A0084F778 /* Countries.swift */,
+				CEDF20B82A59AEC800FDA336 /* RacerImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -310,6 +337,7 @@
 			files = (
 				CEDF20BF2A5C159300FDA336 /* TitleCell.xib in Resources */,
 				CE8EDB802A5575270084F778 /* MainPage.storyboard in Resources */,
+				CE8EDBA22A57EDCB0084F778 /* InfoCell.xib in Resources */,
 				CE8EDB862A5575640084F778 /* CalendarPage.storyboard in Resources */,
 				CE8EDB662A55639E0084F778 /* LaunchScreen.storyboard in Resources */,
 				CE8EDB632A55639E0084F778 /* Assets.xcassets in Resources */,
@@ -326,6 +354,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDF20B52A58102D00FDA336 /* RacerViewController.swift in Sources */,
+				CE8EDB9E2A5748660084F778 /* MainPageViewController.swift in Sources */,
+				CE8EDB5E2A55639C0084F778 /* ViewController.swift in Sources */,
+				CE8EDB982A5708F30084F778 /* Racer.swift in Sources */,
 				28FE3CB12A5B3A6100D6CCB4 /* CalendarViewController.swift in Sources */,
 				CEDF20C12A5C161100FDA336 /* TitleTableViewCell.swift in Sources */,
 				CE8EDB5E2A55639C0084F778 /* ViewController.swift in Sources */,
@@ -336,6 +368,11 @@
 				CE8EDB5A2A55639C0084F778 /* AppDelegate.swift in Sources */,
 				CEDF20CD2A5C1C3200FDA336 /* NewsModel.swift in Sources */,
 				CE8EDB5C2A55639C0084F778 /* SceneDelegate.swift in Sources */,
+				CEDF20B92A59AEC800FDA336 /* RacerImage.swift in Sources */,
+				CE8EDB962A5704CE0084F778 /* RacerTableViewCell.swift in Sources */,
+				CE8EDB9C2A570C5A0084F778 /* Countries.swift in Sources */,
+				CE8EDB9A2A5709F30084F778 /* RacerModel.swift in Sources */,
+				CEDF20B72A59779A00FDA336 /* InfoTableViewCell.swift in Sources */,
 				28FE3CB32A5B3A7700D6CCB4 /* CalendarViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
