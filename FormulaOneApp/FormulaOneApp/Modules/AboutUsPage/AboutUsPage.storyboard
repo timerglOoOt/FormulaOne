@@ -94,18 +94,18 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="О нас" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06t-EG-3TS">
                                 <rect key="frame" x="107" y="81" width="200" height="50"/>
-                                <color key="backgroundColor" red="0.88188627580000001" green="0.30912787390000002" blue="0.12503438820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.81709085049999997" green="0.28519281270000002" blue="0.1094887391" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Xo8-lw-Q5T"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="ZuY-G0-QrE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UQ-Ka-qOz">
                                 <rect key="frame" x="107" y="656" width="200" height="50"/>
-                                <color key="backgroundColor" red="0.88188627580000001" green="0.30912787390000002" blue="0.12503438820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.81709085049999997" green="0.28519281270000002" blue="0.1094887391" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="PMx-JC-T1Y"/>
                                     <constraint firstAttribute="width" constant="200" id="pDJ-1C-6Ce"/>
@@ -171,7 +171,7 @@
         <!--Modal View Controller-->
         <scene sceneID="P3Z-uj-jEN">
             <objects>
-                <viewController storyboardIdentifier="detailvc" id="lxg-Ky-qh0" customClass="ModalViewController" customModule="FormulaOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailvc" id="lxg-Ky-qh0" customClass="ModalViewController" customModule="FormulaOneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1sJ-AS-5m3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

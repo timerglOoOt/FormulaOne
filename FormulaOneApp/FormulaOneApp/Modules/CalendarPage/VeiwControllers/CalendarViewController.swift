@@ -186,6 +186,8 @@ final class CalendarViewController: UIViewController, UITableViewDataSource, UIT
                 cell.dateLabel.textColor = .red
                 cell.countryLabel.textColor = .red
                 cell.trackLabel.textColor = .red
+                cell.selectionStyle = .none
+                
                 return cell
             }
         }
@@ -195,6 +197,8 @@ final class CalendarViewController: UIViewController, UITableViewDataSource, UIT
                 cell.dateLabel.textColor = .black
                 cell.countryLabel.textColor = .black
                 cell.trackLabel.textColor = .black
+                cell.selectionStyle = .none
+                
                 return cell
             }
         }
@@ -204,6 +208,8 @@ final class CalendarViewController: UIViewController, UITableViewDataSource, UIT
                 cell.dateLabel.textColor = .black
                 cell.countryLabel.textColor = .black
                 cell.trackLabel.textColor = .black
+                cell.selectionStyle = .none
+                
                 return cell
             }
         }
